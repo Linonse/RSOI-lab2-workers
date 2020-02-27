@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+	<head>
+		<title>MyStoris</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/my.css' %}">
+		
+	</head>
+	<body>
+	    <div class="page-header" >
+			<h1><a href="http://127.0.0.1:8000/api/"> My Storis </a></h1>
+		</div>
+		<div class="background" style="background-image: url('{% static 'img/ba.jpg' %}');"> 
+			<div class="page-manu">
+				<nav class="four">
+				{% if user.is_authenticated %}
+					<ul class="topmenu">
+						<li><a href="">Пользователь: {{ user.get_username }}</a>
+							<ul class="submenu">
+							{% if user.is_superuser %}
+								<li><a href="{% url 'new_author' %}">Добавить автора</a></li>
+								<li><a href="{% url 'new_book' %}">Добавить книгу</a></li>
+							
+							{% endif %}
+								<li><a href="{% url 'logout'%}?next=/library/">Выйти</a></li>
+							</ul>
+						</li>
+					<ul>	
+				{% else %}
+					<ul class="topmenu">
+						<li><a href="/api/auth.html">Войти</a> 
+							<ul class="submenu">
+							</ul>
+						<li><a >Регистрация</a> </li>
+						</li>
+					</ul>
+				{% endif %}
+				</nav>
+				
+			</div>
+		
+			<div class="page-content" >
+	            {% block content %}
+		        {% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

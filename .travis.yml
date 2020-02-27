@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.7"
+install:
+  - pip install -r requirements.txt
+script:
+  - python3 Stickers/manage.py test Stickers
+  - python3 Music/manage.py test Music
+  - python3 Stories/manage.py test Stories

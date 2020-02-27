@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+	{{status}}
+	{% for data in data %}
+	    <ul>
+			<li><a href="{{data.uuid}}">{{data.name}}</a> </li>
+		</ul>
+	{% endfor %}
+{% endblock %}

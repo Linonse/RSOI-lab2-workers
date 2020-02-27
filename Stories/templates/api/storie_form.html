@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <form class="decor" method="POST" class="post-form">{% csrf_token %}
+		<div class="form-left-decoration"></div>
+		<div class="form-right-decoration"></div>
+		<div class="circle"></div>
+		<div class="form-inner">
+		<h3>Добавить историю</h3>
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Сохранить</button>
+		</div>
+    </form>
+{% endblock %}

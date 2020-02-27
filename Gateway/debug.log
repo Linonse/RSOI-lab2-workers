@@ -1,0 +1,1521 @@
+Watching for file changes with StatReloader
+"GET /api/ HTTP/1.1" 500 147626
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 500 59
+Watching for file changes with StatReloader
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/ HTTP/1.1" 200 1200
+Watching for file changes with StatReloader
+"GET /api/ HTTP/1.1" 200 1200
+"GET /api/stories/8676523d-a48a-4508-beda-88319f153565 HTTP/1.1" 301 0
+"GET /api/stories/8676523d-a48a-4508-beda-88319f153565/ HTTP/1.1" 200 1060
+"GET /api/stories/ HTTP/1.1" 200 2839
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2078
+"GET /api HTTP/1.1" 301 0
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+Internal Server Error: /api/stickers/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 176, in get
+    return render(request, 'api/errorr.html', {'status': code})
+  File "D:\RSOI\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /api/stickers/ HTTP/1.1" 500 227695
+Internal Server Error: /api/music/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 118, in get
+    data, code = self.REQUESTER.get_musics(request=request)
+ValueError: too many values to unpack (expected 2)
+"GET /api/music/ HTTP/1.1" 500 91819
+Internal Server Error: /api/stickers/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 176, in get
+    return render(request, 'api/errorr.html', {'status': code})
+  File "D:\RSOI\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /api/stickers/ HTTP/1.1" 500 227724
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+"GET /api HTTP/1.1" 301 0
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Watching for file changes with StatReloader
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2078
+Internal Server Error: /api/music/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 118, in get
+    data, code = self.REQUESTER.get_musics(request=request)
+ValueError: too many values to unpack (expected 2)
+Internal Server Error: /api/stickers/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 176, in get
+    return render(request, 'api/errorr.html', {'status': code})
+  File "D:\RSOI\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /api/music/ HTTP/1.1" 500 91819
+"GET /api/stickers/ HTTP/1.1" 500 227695
+"GET /api/stickers/ HTTP/1.1" 500 59
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Not Found: /api/persons/
+"GET /api/persons/ HTTP/1.1" 404 4424
+"GET /api/music HTTP/1.1" 301 0
+Internal Server Error: /api/music/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 122, in get
+    return render(request, 'api/errorr.html', {'status': code})
+  File "D:\RSOI\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /api/music/ HTTP/1.1" 500 227490
+Internal Server Error: /api/music/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 122, in get
+    return render(request, 'api/errorr.html', {'status': code})
+  File "D:\RSOI\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\RSOI\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\RSOI\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\RSOI\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+"GET /api/music/ HTTP/1.1" 500 227625
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Internal Server Error: /api/music/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 118, in get
+    data, code = self.REQUESTER.get_musics(request=request)
+ValueError: too many values to unpack (expected 2)
+"GET /api/music/ HTTP/1.1" 500 91666
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Not Found: /api/persons/
+"GET /api/persons/ HTTP/1.1" 404 4424
+"GET /api/music/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /ap
+"GET /ap HTTP/1.1" 404 2051
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/music/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stickers/ HTTP/1.1" 200 982
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/users HTTP/1.1" 301 0
+Forbidden: /api/users/
+"GET /api/users/ HTTP/1.1" 403 4962
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+"GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /api/u
+"GET /api/u HTTP/1.1" 404 4403
+"GET /api/register HTTP/1.1" 301 0
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5646
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 5685
+"POST /api/register/ HTTP/1.1" 201 5699
+Not Found: /a
+"GET /a HTTP/1.1" 404 2048
+Not Found: /api/d
+"GET /api/d HTTP/1.1" 404 4403
+"GET /api/music/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/token-auth HTTP/1.1" 301 0
+Method Not Allowed: /api/token-auth/
+"GET /api/token-auth/ HTTP/1.1" 405 5683
+"POST /api/token-auth/ HTTP/1.1" 200 5656
+Not Found: /api/e1116e5270905dfcfa184fb13a9afa61df7d38d8
+"GET /api/e1116e5270905dfcfa184fb13a9afa61df7d38d8 HTTP/1.1" 404 4520
+Not Found: /api/music/e1116e5270905dfcfa184fb13a9afa61df7d38d8
+"GET /api/music/e1116e5270905dfcfa184fb13a9afa61df7d38d8 HTTP/1.1" 404 4538
+Not Found: /e1116e5270905dfcfa184fb13a9afa61df7d38d8
+"GET /e1116e5270905dfcfa184fb13a9afa61df7d38d8 HTTP/1.1" 404 2165
+Not Found: /api/stories/e1116e5270905dfcfa184fb13a9afa61df7d38d8
+"GET /api/stories/e1116e5270905dfcfa184fb13a9afa61df7d38d8 HTTP/1.1" 404 4544
+Not Found: /api/stories/e1116e5270905dfcfa184fb13a9afa61df7d38d8/
+"GET /api/stories/e1116e5270905dfcfa184fb13a9afa61df7d38d8/ HTTP/1.1" 404 4547
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Not Found: /sapi
+"GET /sapi HTTP/1.1" 404 2057
+"GET /api HTTP/1.1" 301 0
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5646
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 5687
+"GET /api/stickers/ HTTP/1.1" 200 982
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Forbidden: /api/users/
+"POST /api/users/ HTTP/1.1" 403 82
+Not Found: /api/persons/
+"GET /api/persons/ HTTP/1.1" 404 4424
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Method Not Allowed: /api/register/
+"GET /api/register/ HTTP/1.1" 405 5646
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "D:\RSOI\venv\lib\site-packages\django\middleware\common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "D:\RSOI\venv\lib\site-packages\django\middleware\common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/register HTTP/1.1" 500 63991
+Unsupported Media Type: /api/register/
+"POST /api/register/ HTTP/1.1" 415 99
+"POST /api/register/ HTTP/1.1" 201 5702
+Not Found: /api/q
+"GET /api/q HTTP/1.1" 404 4403
+"GET /api/token-auth HTTP/1.1" 301 0
+Method Not Allowed: /api/token-auth/
+"GET /api/token-auth/ HTTP/1.1" 405 5683
+Bad Request: /api/token-auth/
+"POST /api/token-auth/ HTTP/1.1" 400 5721
+"POST /api/token-auth/ HTTP/1.1" 200 5656
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+"POST /api/stories/ HTTP/1.1" 200 1026
+Not Found: /api/�/
+"GET /api/%D1%89/ HTTP/1.1" 404 4413
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /static/css/my.css HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+Forbidden: /api/users/
+"GET /api/users/ HTTP/1.1" 403 4962
+Forbidden: /api/users/
+"GET /api/users/ HTTP/1.1" 403 4962
+"GET /api/users/1 HTTP/1.1" 301 0
+Forbidden: /api/users/1/
+"GET /api/users/1/ HTTP/1.1" 403 5120
+Not Found: /api/q
+"GET /api/q HTTP/1.1" 404 4403
+"GET /api/music/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/stickers/ HTTP/1.1" 200 982
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+Forbidden: /api/user_info/
+"GET /api/user_info/ HTTP/1.1" 403 5038
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+"POST /api/stories/ HTTP/1.1" 200 1026
+"POST /api/stories/ HTTP/1.1" 200 1026
+"POST /api/stories/ HTTP/1.1" 200 1026
+"POST /api/stories/ HTTP/1.1" 200 1026
+"POST /api/stories/ HTTP/1.1" 200 1026
+Internal Server Error: /api/stories
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\utils\deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "D:\RSOI\venv\lib\site-packages\django\middleware\common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "D:\RSOI\venv\lib\site-packages\django\middleware\common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/stories/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/stories HTTP/1.1" 500 64605
+"POST /api/stories/ HTTP/1.1" 200 1026
+"POST /api/stories/ HTTP/1.1" 200 1026
+"POST /api/stories/ HTTP/1.1" 200 1026
+Not Found: /api/us
+"GET /api/us HTTP/1.1" 404 4406
+"GET /api/music/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stories/ HTTP/1.1" 200 1068
+"GET /api/stories/ HTTP/1.1" 200 1068
+Not Found: /api/stories/2
+"GET /api/stories/2 HTTP/1.1" 404 4427
+Not Found: /api/stories/1
+"GET /api/stories/1 HTTP/1.1" 404 4427
+"GET /api/stories/ HTTP/1.1" 200 1068
+"GET /api/stories/ HTTP/1.1" 200 1068
+Watching for file changes with StatReloader
+"POST /api/stories/ HTTP/1.1" 200 1026
+"GET /api/stories/ HTTP/1.1" 200 1068
+"GET /api/stories/ HTTP/1.1" 200 1068
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16682
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16715
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16734
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16786
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2078
+"GET /api/stickers/ HTTP/1.1" 200 1070
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stickers/4bae5410-d6ab-4019-ade8-f7454a2586ff HTTP/1.1" 301 0
+"GET /api/stickers/4bae5410-d6ab-4019-ade8-f7454a2586ff/ HTTP/1.1" 200 1013
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/music/ HTTP/1.1" 200 1068
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/stories/ HTTP/1.1" 200 1068
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Unsupported Media Type: /api/stories/
+"POST /api/stories/ HTTP/1.1" 415 99
+"GET /api/stories/ HTTP/1.1" 200 1068
+"GET /api/music/ HTTP/1.1" 200 1068
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/music/d6eeed01-9bb9-4cae-88c2-017974b50841 HTTP/1.1" 301 0
+"GET /api/music/d6eeed01-9bb9-4cae-88c2-017974b50841/ HTTP/1.1" 200 1109
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stickers/ HTTP/1.1" 200 1070
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stickers/4bae5410-d6ab-4019-ade8-f7454a2586ff HTTP/1.1" 301 0
+"GET /api/stickers/4bae5410-d6ab-4019-ade8-f7454a2586ff/ HTTP/1.1" 200 1013
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?to_user_id=2&text=Hello,my%20friend&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 16962
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?from_uset_id=2&to_user_id=2&text=Hello,my%20friend&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 17011
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16682
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?from_user_id=2&to_user_id=2&text=Hello,my%20friend&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 17011
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?from_user_id=2&to_user_id=2&text=%22Hello,my%20friend%22&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 17025
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?from_user_id=2&to_user_id=2&text=%27Hello,my%20friend%27&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 17025
+"GET /api/stories/ HTTP/1.1" 200 1068
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?from_user_id=2&to_user_id=2&text=Hello,myfriend&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 17004
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/?to_user_id=2&text=Hello,myfriend&sticker_uuid=4bae5410-d6ab-4019-ade8-f7454a2586ff&back=4 HTTP/1.1" 500 16955
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16682
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16682
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16701
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16680
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16680
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16680
+Internal Server Error: /api/stories/
+Traceback (most recent call last):
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\RSOI\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\RSOI\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\RSOI\Gateway\GatewayApp\views.py", line 221, in post
+    data, code = self.REQUESTER.post_storie(request=request, data=request.data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 214, in post_storie
+    data, code = self._add_from_user_id_to_data(request, data)
+  File "E:\RSOI\Gateway\GatewayApp\requesters\stories_requester.py", line 183, in _add_from_user_id_to_data
+    data['from_user_id'] = user_json['id']
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 459, in __setitem__
+    self._assert_mutable()
+  File "D:\RSOI\venv\lib\site-packages\django\http\request.py", line 456, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+"POST /api/stories/ HTTP/1.1" 500 16680
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2027
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2078
+"GET /api HTTP/1.1" 301 0
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stories/ HTTP/1.1" 200 977
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+Not Found: /api/auth.html
+"GET /api/auth.html HTTP/1.1" 404 4427
+"GET /api/ HTTP/1.1" 200 1200
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stickers/ HTTP/1.1" 200 1070
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/stickers/4bae5410-d6ab-4019-ade8-f7454a2586ff/ HTTP/1.1" 200 1013
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
+"GET /api/music/ HTTP/1.1" 200 1068
+"GET /static/css/my.css HTTP/1.1" 404 1654
+"GET /static/img/ba.jpg HTTP/1.1" 404 1654
